@@ -27,6 +27,8 @@ int findAverage(stek* stk) {
     int amount = 0, i = 0;
     for (stek* temp = stk; temp; temp = temp->next, i++)
         amount += temp->num;
+    cout << "Cреднее арифметическое(первое число) : " ;
+    
     return amount / i;
 }
 
@@ -47,10 +49,9 @@ int main() {
     show(stk);
     stk->num = findAverage(stk);
     show(stk);
-    
+     system("pause > nul");
     cleanOut(stk);
-    cout << "^ среднее арифметическое";
-    return 0;
-    system("pause > nul");
+    
+   
 }
 
